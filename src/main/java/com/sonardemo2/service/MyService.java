@@ -24,12 +24,13 @@ public class MyService {
 		return repository.findAll();
 	}
 	public User read(int id) {
-		Optional<User> user = repository.findById(id);
+	/*	Optional<User> user = repository.findById(id);
 		if (user.isEmpty()) {
 			return null;
 		} else {
 			return user.get();
-		}
+		}*/
+		return null;
 	}
 
 	public User update(User user) {
